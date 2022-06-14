@@ -1,0 +1,111 @@
+.hide{ 
+  display:none; 
+} 
+.forceHide{ 
+  display:none!important; 
+}
+.invisible{
+  visibility:hidden; 
+}
+.selected{
+ background-color: #E0EDC7;	    
+}
+#MLPtable,#CHtable,#PIBtable,#KCtable {
+	 margin-top: 20px; 
+}
+#MLPtable tr th.selected,#CHtable tr th.selected,
+#PIBtable tr th.selected,#KCtable tr th.selected {
+   background-color: #89bc34;
+   color: white; 
+}
+#MLPtable tr th,#CHtable tr th,#PIBtable tr th,#KCtable tr th { 
+  padding: 5px 7px; 
+  border: 1px solid #BBDDF8; 
+  text-align: center!important;
+  vertical-align : middle;
+}
+#MLPtable tr td,#CHtable tr td,#PIBtable tr td,#KCtable tr td { 
+  border: 1px solid #BBDDF8; 
+  vertical-align: middle; 
+  text-align: left; 
+  font-size: 15px; 
+  font-weight: 700;
+  padding: 10px 7px; 
+  background-position: 50%; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  line-height: 1.5;
+}
+.addon-info-panel { 
+  background: #f1f6f9;
+}
+#MLPtable tr td.symbols, #CHtable tr td.symbols, #PIBtable tr td.symbols, #KCtable tr td.symbols{ 
+  text-align:center;
+}
+
+.initial-class{
+  min-width: 130px;
+}
+
+#MLPtable  tr:nth-child(7) td:nth-child(3) button,
+#CHtable  tr:nth-child(7) td:nth-child(3) button,
+#PIBtable  tr:nth-child(11) td:nth-child(3) button,
+#KCtable  tr:nth-child(8) td:nth-child(3) button{
+		margin-top: -21px;
+    min-height: 75px;
+}
+#CHtable  tr:nth-child(7) td:nth-child(2) button,
+#KCtable  tr:nth-child(8) td:nth-child(2) button{
+   min-height: 75px;
+}
+.drawer-btn{
+	font-weight: normal;  	  
+}
+.ensModalBackdrop{
+ opacity: 0.6;  
+}
+#MLPtable > tbody > tr:nth-child(1) > th.addon-info-panel.invisible,
+#CHtable > tbody > tr:nth-child(1) > th.addon-info-panel.invisible,
+#PIBtable > tbody > tr:nth-child(1) > th.addon-info-panel.invisible,
+#KCtable > tbody > tr:nth-child(1) > th.addon-info-panel.invisible {
+  border: none; 
+}
+
+@media screen and (max-width: 767px){ 
+.initial-class {
+  max-width: 90px;
+  min-width: 90px;
+  font-size: 13px;	
+	}
+  #MLPtable tr td,#CHtable tr td,#PIBtable tr td,#KCtable tr td { 
+    font-size: 13px;
+  }
+  #MLPtable tr td.symbols, #CHtable tr td.symbols, #PIBtable tr td.symbols, #KCtable tr td.symbols{
+    padding: 5px;
+  }
+  #MLPtable  tr:nth-child(7) td:nth-child(3) button{
+    min-height: 105px;
+  }
+  #PIBtable  tr:nth-child(11) td:nth-child(3) button{
+     min-height: 90px;
+  }
+  /*.pncd-buttons-container .initial-class {
+    min-width: 130px;*/
+}
+
+@media only screen and (max-device-width: 325px) {
+ #MLPtable tr td,#CHtable tr td,#PIBtable tr td,#KCtable tr td{
+   font-size: 13px;
+ }
+ .initial-class {
+    max-width: 80px;
+    min-width: 80px;
+    font-size: 12px;	
+	}
+  #MLPtable tr:nth-child(7) td:nth-child(3) button {
+    min-height: 92px;
+  }
+  #PIBtable tr:nth-child(11) td:nth-child(3) button {
+    min-height: 78px;
+  }
+}
