@@ -1,0 +1,141 @@
+.final-declarations .declaration-check {
+	padding-left: 50px;
+  padding-bottom: 15px;
+}
+
+.final-declarations .declaration-check .checkmark{
+  border: 1px solid rgb(118, 118, 118);
+  left: 15px;
+}
+.final-declarations .declaration-check input {
+	padding: 90px;
+}
+
+.final-declarations .declaration-check .checkmark.selected{
+  border: 1px solid #096fae;
+  background-color: #096fae;
+}
+
+.final-declarations .declaration-check .checkmark.selected::after{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}
+
+.section {
+  border: 1px solid lightgrey;
+  padding: 15px !important;
+  margin: 15px 0;
+}
+
+.section > li::before, 
+.final-declarations .declarations-list li.tick::before {
+  background: lightgrey !important; 
+  border-color: lightgrey;
+}
+
+.final-declarations .declarations-list li.tick::before {
+  background: none !important;
+}
+
+es-about-you > div > ul > li::before,
+es-your-home > div > ul > li::before,
+es-joint-policy > div > ul > li::before, 
+es-home-cover > div > ul > li::before,
+es-your-claims > div > ul > li::before {
+  background: lightgrey !important; 
+}
+
+es-your-excesses li::before,
+es-your-excesses > div > ul > li::before,
+es-your-excesses > div > ul > li {
+  background: none !important;
+  border: none !important;
+  padding: 3px !important;
+}
+es-your-excesses > div > ul > li > ul > li {
+  padding: 0 !important;
+}
+
+.final-declarations .declarations-wrapper {
+  background-color: rgb(250,242,149);
+  cursor: pointer;
+  padding: 0;
+}
+
+.acceptTC {
+  padding: 0.75rem 15px;
+  margin-bottom: 0 !important;
+}
+
+.your-excess .check-list > li {
+  padding: 10px 0 !important;
+}
+.your-excess .check-list > li:not(:last-child) {
+  border-bottom: 1px solid lightgrey !important;
+}
+
+.cover-start {
+  text-transform: capitalize;
+}
+
+.title {
+  color: #4a4a4a !important;
+}
+
+.excess-prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.your-excess .cover-start {
+  font-weight: 600;
+}
+
+.get-documents-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.fc p {
+  margin: 20px 0;
+}
+.fc p:last-child {
+  margin-bottom: 10px;
+}
+
+.breakdown-basket--item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.breakdown-basket > div:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+.payment-plan {
+  font-size: 10px;
+}
+
+.edit-button {
+  margin: 0;
+}
+
+.mobile-overlay-addon {
+  width: 100% !important;
+  transform: translateY(calc(-40vh + 10%)) !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .second-overlay {
+    display: none;
+  }
+}
+
+.excess-prices-span.totalPrice .excess-prices {
+  font-weight: 900;
+}
+
+.ng-star-inserted >span > .excess-prices {
+  font-weight: 500;
+}
