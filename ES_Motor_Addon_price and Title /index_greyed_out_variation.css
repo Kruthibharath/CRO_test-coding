@@ -1,0 +1,69 @@
+.h2 span {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #0971b0;
+} 
+.alignRight{
+  float:right
+}
+.align{
+  margin:15px 0;
+}
+.cta .cta.selection, .cta .cta.standard { 
+  min-height: 70px;
+} 
+.hide{ 
+  display:none;
+} 
+.cta .cta.selection .content-two.content-two-pncd-yes , 
+.cta .cta.standard .content-two.content-two-pncd-yes{
+  bottom: 25px;
+}
+.cta .cta.selection .content-two, 
+.cta .cta.standard .content-two{
+  bottom: 15px;
+}
+@media screen and (max-width: 767px){
+  #NCDTitle{
+    display: inline-block;
+    width: 65%;
+	}
+  .cta .cta.selection .content-two, 
+	.cta .cta.standard .content-two{
+  	bottom: 6px;
+	}
+  [data-qa-id = "carHireCoverAdditionalInfo"] .cta .cta.selection .content-two, 
+ 	[data-qa-id = "carHireCoverAdditionalInfo"]  .cta .cta.standard .content-two,
+  [data-qa-id = "NoPNCDMoveOnButton"] .cta.selection .content-two, 
+ 	[data-qa-id = "NoPNCDMoveOnButton"] .cta.standard .content-two{
+    bottom: 15px;
+  }
+  [data-qa-id = "carHireCoverAdditionalInfo"] .cta .cta.selection .content-two.content-two-pncd-yes, 
+ 	[data-qa-id = "carHireCoverAdditionalInfo"] .cta .cta.standard .content-two.content-two-pncd-yes{
+     bottom: 25px;
+  }
+}
+@media screen and (max-width: 375px){ 
+  .h2 span{
+    font-size: 20px;
+  }
+  #MLPTitle{
+   	display: inline-block;
+    width: 73%; 
+  }
+  #MLPPrice{
+    width: 8%;
+  }
+   #PIBTitle{
+   	display: inline-block;
+    width: 65%; 
+  }
+  #PIBPrice{
+    width: 0%;
+  }
+   #NCDTitle{
+  	display: inline-block;
+  	width: 65%;
+	}
+}
