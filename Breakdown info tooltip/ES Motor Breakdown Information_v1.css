@@ -1,0 +1,147 @@
+.esure_sw_motor_breakdown_info .im-first-breakdown-table td.breakdown-info-panel {
+    padding-left: 25px !important;
+    position: relative;
+}
+
+@supports (-moz-appearance: none) {
+    .esure_sw_motor_breakdown_info .im-first-breakdown-table td.breakdown-info-panel {
+        /* Add firefox CSS code here */
+        background-clip: padding-box;
+    }
+}
+
+.esure_sw_motor_breakdown_info .im-first-breakdown-table td.breakdown-info-panel>i {
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    color: #7675d2;
+}
+
+.esure_sw_motor_breakdown_info .im-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.35s ease-in;
+    -o-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.esure_sw_motor_breakdown_info .im-modal.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.esure_sw_motor_breakdown_info .im-modal__content {
+    position: relative;
+    max-width: 551px;
+    max-height: 80vh;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.esure_sw_motor_breakdown_info .im-modal__title {
+    margin-right: 20px;
+}
+
+.esure_sw_motor_breakdown_info .im-modal__header {
+    min-height: 40px;
+    background-color: #7675d2;
+    color: #fff;
+    padding: 10px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font: 600 18px/20px "MuseoSansRounded";
+}
+
+.esure_sw_motor_breakdown_info .im-modal__close {
+    cursor: pointer;
+}
+
+.esure_sw_motor_breakdown_info .im-modal__body {
+    padding: 24px;
+}
+
+.esure_sw_motor_breakdown_info .im-modal__copy {
+    margin: 0;
+    color: #3b3b3a;
+    font: 16px/19px "MuseoSansRounded";
+}
+
+.esure_sw_motor_breakdown_info .im-modal__copy ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+.esure_sw_motor_breakdown_info [data-animation="slideInOutTop"] .im-modal__content {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.esure_sw_motor_breakdown_info [data-animation="slideInOutTop"].is-visible .im-modal__content {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+@media (max-width: 767px) {
+    .esure_sw_motor_breakdown_info .im-first-breakdown-table td.breakdown-info-panel>i {
+        left: 5px;
+        top: 7px;
+    }
+
+    .esure_sw_motor_breakdown_info .im-first-breakdown-table td.breakdown-info-panel {
+        padding-left: 22px !important;
+        position: relative;
+    }
+}
+
+@media (max-width: 320px) {
+    .esure_sw_motor_breakdown_info .im-first-breakdown-table td.breakdown-info-panel>i {
+        left: 3px;
+        top: 6px;
+    }
+
+    .esure_sw_motor_breakdown_info .im-first-breakdown-table td.breakdown-info-panel {
+        padding-left: 20px !important;
+        position: relative;
+        word-break: break-word;
+    }
+}

@@ -1,0 +1,17 @@
+.breakdown-table-wrapper .im-first-breakdown-table th.breakdown-info-panel {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.im-first-breakdown-table i.c-open-modal {
+    position: absolute;
+    font-size: 15px;
+    cursor: pointer;
+    color: #7675d2;
+    bottom: 7px;
+    left: 45%;
+}
+
+.im-first-breakdown-table th.breakdown-selected-header i.c-open-modal {
+    color: #fff;
+}
